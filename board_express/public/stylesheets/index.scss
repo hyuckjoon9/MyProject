@@ -11,25 +11,23 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .start-button {
-  padding: 12px 24px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 30px;
-  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #ddd;
+  }
 }
 .custom-cursor {
   position: fixed;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   pointer-events: none;
   top: 0;
