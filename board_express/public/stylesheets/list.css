@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-wrapper {
+  padding: 40px;
+}
+
+.card {
+  background-color: #111;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn {
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}/*# sourceMappingURL=list.css.map */

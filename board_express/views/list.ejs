@@ -1,6 +1,39 @@
-<%- include('partials/header', { title: 'list.ejs' }) %>
-<body>
-  <p>여기는 list.ejs입니다.</p>
-  <%- include('partials/bootstrap_js') %>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list.ejs</title>
+    <%- include('partials/header') %>
+    <link rel="stylesheet" href="../stylesheets/list.css" />
+  </head>
+  <body>
+    <div class="list-wrapper text-center">
+      <h1 class="display-4 mb-5">Board List</h1>
+
+      <!-- 게시글 목록이 여기에 들어감 -->
+      <div class="container">
+        <!-- 예시 카드 -->
+        <div class="container">
+          <% posts.forEach((post) => { %>
+          <div class="card bg-dark text-white mb-3">
+            <div class="card-body">
+              <h5 class="card-title"><%= post.title %></h5>
+              <p class="card-text">
+                <%= post.content.length > 15 ? post.content.slice(0, 15) + '...'
+                : post.content %>
+              </p>
+              <a href="/board/<%= post.id %>" class="btn btn-light rounded-pill"
+                >자세히 보기</a
+              >
+            </div>
+          </div>
+          <% }) %>
+        </div>
+
+        <!-- 더 많은 카드 반복 -->
+      </div>
+    </div>
+    <%- include('partials/bootstrap_js') %>
+  </body>
 </html>
