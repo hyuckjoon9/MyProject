@@ -1,0 +1,22 @@
+* text=auto
+
+# 주요 웹 파일들 텍스트로 명시 처리 (명확하게 하기 위함)
+*.ejs text
+*.html text
+*.css text
+*.scss text
+*.js text
+*.json text
+
+####################################
+# 📦 바이너리 파일은 줄바꿈 변환 방지 (깨짐 방지)
+####################################
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mp4 binary
+*.pdf binary
+*.zip binary
+*.exe binary
