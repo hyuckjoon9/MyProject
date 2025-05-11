@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>list.ejs</title>
-    <%- include('partials/header') %>
-    <link rel="stylesheet" href="../stylesheets/list.css" />
+    <%- include('partials/bootstrap_css') %>
+    <link rel="stylesheet" href="/stylesheets/list.css" />
+    <link rel="stylesheet" href="/stylesheets/cursor.css" />
   </head>
   <body>
+    <!-- START 커서 효과 -->
+    <%- include('partials/cursor_effect') %>
+    <!-- END 커서 효과 -->
     <div class="list-wrapper text-center">
       <h1 class="display-4 mb-5">Board List</h1>
 
@@ -35,5 +39,6 @@
       </div>
     </div>
     <%- include('partials/bootstrap_js') %>
+    <script src="/javascripts/cursorTrail.js"></script>
   </body>
 </html>
