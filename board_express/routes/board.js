@@ -16,6 +16,6 @@ router.get('/write', writeController.tempWrite);
 
 router.get('/update', updateController.tempUpdate);
 
-router.get('/detail', detailController.tempDetail);
+router.get('/detail/:id', detailController.getDetail);
 
 module.exports = router;

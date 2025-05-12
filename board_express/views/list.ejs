@@ -27,7 +27,9 @@
                 <%= post.content.length > 15 ? post.content.slice(0, 15) + '...'
                 : post.content %>
               </p>
-              <a href="/board/<%= post.id %>" class="btn btn-light rounded-pill"
+              <a
+                href="/board/detail/<%= post.id %>"
+                class="btn btn-light rounded-pill"
                 >자세히 보기</a
               >
             </div>

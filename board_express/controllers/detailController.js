@@ -1,5 +1,6 @@
 var express = require('express');
 
-exports.tempDetail = (req, res) => {
-  res.render('detail.ejs');
+exports.getDetail = (req, res) => {
+  var postId = req.params.id;
+  res.render('detail.ejs', { id: postId });
 };
